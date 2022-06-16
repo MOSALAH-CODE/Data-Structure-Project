@@ -1,6 +1,6 @@
 package Queue;
 
-public class Queue <T>{
+public class GenericQueue<T>{
     QNode <T> front, rear;
 
     static class QNode <t>{
@@ -13,7 +13,7 @@ public class Queue <T>{
         }
     }
 
-    public Queue (){
+    public GenericQueue(){
         this.front = this.rear = null;
     }
 
@@ -56,7 +56,7 @@ public class Queue <T>{
     }
 
     public static void main(String[] args) {
-        Queue<String> queue = new Queue<String>();
+        GenericQueue<String> queue = new GenericQueue<String>();
         queue.enqueue("Mo");
         queue.enqueue("Rima");
         queue.enqueue("Anwar");
